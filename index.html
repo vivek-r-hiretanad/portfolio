@@ -3,25 +3,355 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vivek R's Portfolio</title>
+    <meta name="description" content="Vivek R Hiretanad - Computer Science Engineering Student | AI & ML Enthusiast | Full Stack Developer">
+    <meta name="keywords" content="Vivek R, Computer Science, AI, Machine Learning, Full Stack Developer, Portfolio">
+    <meta name="author" content="Vivek R Hiretanad">
+    
+    <title>Vivek R Hiretanad - Portfolio</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Website</h1>
-        <nav>
-            <ul>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="biodata.html">Bio-data</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h2>Hello, I'm Vivek R</h2>
-        <p>A passionate Computer Science student specializing in web development.</p>
-    </main>
-    <footer>
-        <p>Contact me at <a href="mailto:vivekrhiretanad16@gmail.com">vivekrhiretanad16@gmail.com</a></p>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Vivek R Hiretanad</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="highlight">Vivek R Hiretanad</span>
+                    </h1>
+                    <p class="hero-subtitle">Computer Science Engineering Student</p>
+                    <p class="hero-description">
+                        Passionate about AI, Machine Learning, and Full Stack Development. 
+                        Currently pursuing B.E. in Computer Science at JSS Academy of Technical Education.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                        <a href="attached_assets/Vivek_R_H_Resume.pdf" download="Vivek_R_H_Resume.pdf" class="btn btn-secondary">
+                            <i class="fas fa-download"></i> Download Resume
+                        </a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/yourusername" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:vivekrhiretanad16@gmail.com" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-container">
+                        <img src="attached_assets/your_profile_image.jpg" alt="Vivek R Profile Photo" class="profile-img">
+                        <div class="image-backdrop"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a dedicated Computer Science Engineering student with a passion for technology and innovation. 
+                        Currently in my 2nd year at JSS Academy of Technical Education, Bengaluru, I maintain a strong 
+                        academic record with a CGPA of 8.86.
+                    </p>
+                    <p>
+                        My interests lie in Artificial Intelligence, Machine Learning, and Full Stack Development. 
+                        I enjoy working on projects that solve real-world problems and have experience in various 
+                        programming languages and technologies.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>3+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat">
+                            <h3>8.86</h3>
+                            <p>CGPA</p>
+                        </div>
+                        <div class="stat">
+                            <h3>4+</h3>
+                            <p>Certificates</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="education-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Bachelor of Engineering - Computer Science</h3>
+                        <h4>JSS Academy of Technical Education, Bengaluru</h4>
+                        <p class="timeline-date">Dec 2022 - Apr 2026</p>
+                        <p class="timeline-grade">CGPA: 8.86</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Pre-University Course (PCMCs)</h3>
+                        <h4>G H PU College, Haveri</h4>
+                        <p class="timeline-date">Apr 2021 - Apr 2022</p>
+                        <p class="timeline-grade">Percentage: 88.3%</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Secondary School Leaving Certificate (SSLC)</h3>
+                        <h4>KLE Society’s English Medium School, Haveri</h4>
+                        <p class="timeline-date">June 2010 - Mar 2020</p>
+                        <p class="timeline-grade">Percentage: 79.4%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Java</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-paint-brush"></i> Frontend Development</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">React.js</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-database"></i> Backend & Database</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Express.js</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">MongoDB</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-brain"></i> Core Skills</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">Data Structures</span>
+                        <span class="skill-tag">Algorithms</span>
+                        <span class="skill-tag">OOP</span>
+                        <span class="skill-tag">Machine Learning</span>
+                        <span class="skill-tag">Artificial Intelligence</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Blockchain-Powered Tamper-Proof Audio Evidence System</h3>
+                        <div class="project-tech">Blockchain</div>
+                    </div>
+                    <p class="project-description">
+                        Developing a secure, blockchain-based platform to verify the integrity of audio evidence.
+                    </p>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Full Stack Food Delivery Website</h3>
+                        <div class="project-tech">MERN Stack</div>
+                    </div>
+                    <p class="project-description">
+                        Designed and built a full-stack web application for food delivery with secure payment processing.
+                    </p>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Library Management System</h3>
+                        <div class="project-tech">Java</div>
+                    </div>
+                    <p class="project-description">
+                        Developed a Java-based desktop application to manage library operations.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3>AI-Based Interview Platform Internship</h3>
+                    <div class="experience-focus">MERN Stack Developer</div>
+                </div>
+                <p class="experience-description">
+                    Contributed to building an intelligent interview simulation system using AI, focusing on front-end design and logic implementation.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="certificates">
+        <div class="container">
+            <h2 class="section-title">Certificates & Achievements</h2>
+            <div class="certificates-grid">
+                <div class="certificate-item">
+                    <h4>AI and ML Foundations</h4>
+                    <p>IBM SkillsBuild • Apr 2025</p>
+                </div>
+                <div class="certificate-item">
+                    <h4>Introduction to Cyber Security</h4>
+                    <p>OnWingspan • Mar 2025</p>
+                </div>
+                <div class="certificate-item">
+                    <h4>MongoDB for SQL Experts</h4>
+                    <p>MongoDB University • Apr 2025</p>
+                </div>
+                <div class="certificate-item">
+                    <h4>Intro to Web Dev (HTML, CSS, JS)</h4>
+                    <p>Coursera • Dec 2023</p>
+                </div>
+                <div class="certificate-item">
+                    <h4>Problem Solving Through Programming in C</h4>
+                    <p>NPTEL • Jul - Oct 2023</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect!</h3>
+                    <p>
+                        I'm always interested in new opportunities and collaborations. 
+                        Feel free to reach out if you'd like to discuss projects, 
+                        internships, or just have a chat about technology!
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:vivekrhiretanad16@gmail.com">vivekrhiretanad16@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <a href="tel:+916362397738">(+91) 6362397738</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Bengaluru, Karnataka, India - 560056</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <a href="https://github.com/yourusername" target="_blank" class="social-btn">
+                            <i class="fab fa-github"></i>
+                            GitHub
+                        </a>
+                        <a href="https://www.linkedin.com/in/yourusername" target="_blank" class="social-btn">
+                            <i class="fab fa-linkedin"></i>
+                            LinkedIn
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Vivek R Hiretanad. All rights reserved.</p>
+                <p>Built with ❤️ using HTML, CSS & JavaScript</p>
+            </div>
+        </div>
     </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
